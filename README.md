@@ -1,6 +1,6 @@
-# Reliquias Automation – Serenity BDD POM
+Automation – Serenity BDD POM
 
-Proyecto de automatización de pruebas con **Serenity BDD 4.2.0**, **Cucumber 7** (Gherkin) y patrón **Page Object Model (POM)**. Configurado para Java 17, estable y listo para portafolio.
+Proyecto de automatización de pruebas con **Serenity BDD 4.2.0**, **Cucumber 7** (Gherkin) y patrón **Page Object Model (POM)**. Configurado para Java 17, estable.
 
 ## Stack
 
