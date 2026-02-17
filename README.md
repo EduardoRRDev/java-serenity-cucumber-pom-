@@ -1,4 +1,4 @@
-# Reliquias Automation – Serenity BDD POM
+Automation – Serenity BDD POM
 
 [![CI](https://github.com/EduardoRRDev/java-serenity-cucumber-pom-/actions/workflows/ci.yml/badge.svg)](https://github.com/EduardoRRDev/java-serenity-cucumber-pom-/actions/workflows/ci.yml)
 [![SonarCloud](https://sonarcloud.io/api/project_badges/quality_gate?project=eduardorrdev_java-serenity-cucumber-pom-)](https://sonarcloud.io/summary/new_code?id=eduardorrdev_java-serenity-cucumber-pom-)
