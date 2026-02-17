@@ -1,7 +1,6 @@
 Automation – Serenity BDD POM
 
 [![CI](https://github.com/EduardoRRDev/java-serenity-cucumber-pom-/actions/workflows/ci.yml/badge.svg)](https://github.com/EduardoRRDev/java-serenity-cucumber-pom-/actions/workflows/ci.yml)
-[![SonarCloud](https://sonarcloud.io/api/project_badges/quality_gate?project=eduardorrdev_java-serenity-cucumber-pom-)](https://sonarcloud.io/summary/new_code?id=eduardorrdev_java-serenity-cucumber-pom-)
 
 Proyecto de automatización de pruebas con **Serenity BDD 4.2.0**, **Cucumber 7** (Gherkin) y patrón **Page Object Model (POM)**. Configurado para Java 17, estable.
 
@@ -126,7 +125,7 @@ Herramientas elegidas por ser **gratuitas** y ampliamente usadas en la industria
 
 ```bash
 # Ejecución local (requiere token en https://sonarcloud.io)
-./gradlew sonarqube -Dsonar.token=TU_TOKEN
+./gradlew sonar -Dsonar.token=TU_TOKEN
 ```
 
 ### Jenkinsfile
@@ -145,9 +144,10 @@ Herramientas elegidas por ser **gratuitas** y ampliamente usadas en la industria
 | **SonarCloud** (análisis de código) | Tras configurar `SONAR_TOKEN`, en SonarCloud | [sonarcloud.io](https://sonarcloud.io) → tu proyecto |
 | **Jenkinsfile** | Archivo en la raíz del repo | Visible al abrir el repositorio |
 
-**Para el reclutador:** comparte el enlace del repo. Los badges en la parte superior del README muestran el estado del CI y de SonarCloud de un vistazo.
+**Para el reclutador:** comparte el enlace del repo. El badge de CI muestra el estado del pipeline de un vistazo.
 
-> **Nota:** El badge de SonarCloud aparecerá cuando configures el proyecto en [sonarcloud.io](https://sonarcloud.io) y agregues `SONAR_TOKEN` en GitHub.
+> **Badge SonarCloud:** Para añadirlo, obtén el *Project key* en SonarCloud (Project Settings > General) y agrega:  
+> `[![SonarCloud](https://sonarcloud.io/api/project_badges/quality_gate?project=TU_PROJECT_KEY)](https://sonarcloud.io/summary/new_code?id=TU_PROJECT_KEY)`
 
 ## Licencia
 

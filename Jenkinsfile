@@ -33,7 +33,7 @@ pipeline {
                 expression { env.SONAR_TOKEN != null && env.SONAR_TOKEN != '' }
             }
             steps {
-                sh "./gradlew sonarqube -Dsonar.token=${env.SONAR_TOKEN} --no-daemon"
+                sh "./gradlew sonar -Dsonar.token=${env.SONAR_TOKEN} --no-daemon"
             }
         }
     }

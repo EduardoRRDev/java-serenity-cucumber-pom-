@@ -81,6 +81,7 @@ sonarqube {
         property "sonar.sources", "src/test/java"
         property "sonar.tests", "src/test/java"
         property "sonar.java.binaries", "build/classes/java/test"
+        property "sonar.gradle.skipCompile", "true"
     }
 }
 
