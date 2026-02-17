@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id "net.serenity-bdd.serenity-gradle-plugin" version "4.2.1"
+    id "org.sonarqube" version "4.4.1.3373"
 }
 
 group = 'co.com.proyecto.automatizacion'
@@ -69,6 +70,18 @@ test {
 
 serenity {
     reports = ["single-page-html"]
+}
+
+// SonarQube / SonarCloud
+sonarqube {
+    properties {
+        property "sonar.host.url", "https://sonarcloud.io"
+        property "sonar.organization", "eduardorrdev"
+        property "sonar.projectKey", "eduardorrdev_java-serenity-cucumber-pom-"
+        property "sonar.sources", "src/test/java"
+        property "sonar.tests", "src/test/java"
+        property "sonar.java.binaries", "build/classes/java/test"
+    }
 }
 
 // 2) Después de aggregate, copiar el reporte a una carpeta con timestamp (historial)
